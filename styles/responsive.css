@@ -1,0 +1,132 @@
+/* 
+* Estilos responsivos para el portafolio de certificaciones
+* Asegura una correcta visualización en diferentes dispositivos
+*/
+
+/* Para tablets */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+    
+    header .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .certifications {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .summary h2 {
+        font-size: 1.4rem;
+    }
+    
+    .summary p {
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-copyright {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+}
+
+/* Para tablets pequeñas y móviles grandes */
+@media (max-width: 768px) {
+    header {
+        padding: 2.5rem 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .certifications {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 1.8rem;
+    }
+
+    .card-header {
+        padding: 1.2rem;
+        height: 120px;
+    }
+    
+    .card-body {
+        padding: 1.2rem;
+    }
+    
+    .cert-title {
+        font-size: 1.2rem;
+    }
+    
+    .summary {
+        padding: 1.5rem;
+    }
+}
+
+/* Para móviles pequeños */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header .subtitle {
+        font-size: 1rem;
+    }
+    
+    .filter-options {
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+    
+    .cert-title {
+        font-size: 1.1rem;
+    }
+    
+    .cert-issuer {
+        font-size: 0.95rem;
+    }
+    
+    .cert-date {
+        font-size: 0.85rem;
+    }
+    
+    .search-box {
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    #searchInput {
+        border-radius: 15px;
+        border: 2px solid var(--primary-blue);
+        text-align: center;
+    }
+    
+    #searchButton {
+        border-radius: 0 0 15px 15px;
+        padding: 10px;
+        width: 100%;
+    }
+}

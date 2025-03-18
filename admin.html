@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Certificaciones</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Administrar Certificaciones</h1>
+            <p class="subtitle">Agrega y gestiona tus certificaciones</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="admin-form">
+            <h2><i class="fas fa-certificate"></i> Agregar Nueva Certificación</h2>
+            
+            <form id="certificationForm">
+                <div class="form-group">
+                    <label for="title">Título de la Certificación*</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="issuer">Institución*</label>
+                    <input type="text" id="issuer" name="issuer" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Descripción*</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="url">URL del Certificado</label>
+                    <input type="url" id="url" name="url" placeholder="https://...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="logoUpload">Logo de la Institución*</label>
+                    <input type="file" id="logoUpload" name="logoUpload" accept="image/*">
+                    <p class="help-text">O ingresa una URL de imagen:</p>
+                    <input type="url" id="logoUrl" name="logoUrl" placeholder="https://...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Fecha de Obtención*</label>
+                    <input type="text" id="date" name="date" required placeholder="Mes/Año o Año">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Categoría*</label>
+                    <select id="category" name="category" required>
+                        <option value="development">Desarrollo Web</option>
+                        <option value="cloud">Cloud & Infraestructura</option>
+                        <option value="security">Seguridad & Redes</option>
+                        <option value="methodology">Metodologías & Gestión</option>
+                    </select>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Guardar Certificación</button>
+                    <button type="reset" class="reset-btn">Limpiar Formulario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> | Administración de Certificaciones</p>
+        </div>
+    </footer>
+
+    <script src="scripts/admin.js"></script>
+</body>
+</html>

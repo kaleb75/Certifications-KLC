@@ -1,0 +1,378 @@
+/* 
+* Estilos principales para el portafolio de certificaciones
+* Paleta de colores: Azul (#0047AB), Amarillo dorado (#FFD700), Blanco (#FFFFFF)
+*/
+
+:root {
+    --primary-blue: #0047AB;
+    --primary-gold: #FFD700;
+    --primary-white: #FFFFFF;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --card-bg: #FFFFFF;
+    --card-border: rgba(0, 0, 0, 0.05);
+    --card-hover: #f9f9f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(135deg, var(--primary-blue), #003580);
+    color: var(--primary-white);
+    padding: 3.5rem 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--primary-gold);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+header .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Sección de resumen */
+.summary {
+    background-color: rgba(0, 71, 171, 0.05);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2.5rem 0;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--primary-blue);
+}
+
+.summary h2 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.summary p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.summary-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.summary i {
+    margin-right: 8px;
+    color: var(--primary-gold);
+}
+
+/* Estilos de los filtros */
+.filters {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.filter-options {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter-btn {
+    background-color: var(--primary-white);
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+}
+
+/* Buscador */
+.search-container {
+    margin-bottom: 2.5rem;
+}
+
+.search-box {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--primary-blue);
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+#searchButton {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    border-radius: 0 30px 30px 0;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #003580;
+}
+
+/* Estilos de las tarjetas de certificación */
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.certification-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+    border: 1px solid var(--card-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.certification-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--primary-blue);
+}
+
+.certification-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    background-color: var(--card-hover);
+}
+
+.card-header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 71, 171, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    height: 150px;
+}
+
+.card-header img {
+    width: 10px;
+    height: 10px;
+}
+
+.card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-title {
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.cert-title a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cert-title a:hover {
+    color: #003580;
+    text-decoration: underline;
+}
+
+.cert-issuer {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cert-issuer i {
+    color: var(--primary-blue);
+}
+
+.cert-description {
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+}
+
+.cert-date {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-light);
+    border-top: 1px solid var(--card-border);
+    width: 100%;
+}
+
+.cert-date i {
+    color: var(--primary-gold);
+}
+
+.cert-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-development {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+.category-cloud {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: #6c757d;
+}
+
+.category-security {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.category-methodology {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #d39e00;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    padding: 3rem 0;
+    margin-top: 2rem;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-gold);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    margin-bottom: 1.5rem;
+}
+
+.footer-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-gold);
+}
+
+.footer-info p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-info i {
+    margin-right: 8px;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+}
+.cert-logo {
+    width: 150px;
+    height: auto
+}
