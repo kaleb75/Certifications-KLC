@@ -62,7 +62,7 @@ const certifications = [
         description: "Aprendizaje de conceptos de álgebra de nivel universitario aplicados en Python.",
         url: "https://www.freecodecamp.org/certification/fcc7dffa92c-473d-4d34-93a2-1419b1333fca/college-algebra-with-python-v8",
         logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/FreeCodeCamp_logo.svg",
-        date: "2023",
+        date: "2024",
         category: "development"
     },
     {
@@ -72,7 +72,7 @@ const certifications = [
         description: "Profundización en el entendimiento de algoritmos y estructuras de datos utilizando JavaScript.",
         url: "https://www.freecodecamp.org/certification/fcc7dffa92c-473d-4d34-93a2-1419b1333fca/javascript-algorithms-and-data-structures",
         logo: "https://upload.wikimedia.org/wikipedia/commons/f/fa/FreeCodeCamp_logo.svg",
-        date: "2023",
+        date: "2024",
         category: "development"
     },
     {
@@ -92,7 +92,7 @@ const certifications = [
         description: "Curso CS50 de Harvard, obteniendo una amplia comprensión de ciencias de la computación y programación.",
         url: "#",
         logo: "https://upload.wikimedia.org/wikipedia/commons/2/25/Harvard_University_shield.png",
-        date: "2023",
+        date: "2024",
         category: "development"
     },
     {
@@ -112,7 +112,7 @@ const certifications = [
         description: "Certificación de nivel fundacional en ITIL4, enfocada en gestión de servicios de TI.",
         url: "#",
         logo: "https://valueinsights.ch/wp-content/uploads/2019/06/ITIL%C2%AE-4-Foundation-CPD-200x200.png",
-        date: "2023",
+        date: "2024",
         category: "methodology"
     },
     {
@@ -122,7 +122,7 @@ const certifications = [
         description: "Capacitación en principios y prácticas de gestión de servicios de TI.",
         url: "#",
         logo: "https://valueinsights.ch/wp-content/uploads/2019/06/ITIL%C2%AE-4-Foundation-CPD-200x200.png",
-        date: "2023",
+        date: "2024",
         category: "methodology"
     },
     {
@@ -152,7 +152,7 @@ const certifications = [
         description: "Curso Básico de Scrum Master, adquiriendo conocimientos fundamentales en metodología Scrum.",
         url: "#",
         logo: "https://lithespeed.com/wp-content/uploads/2021/05/CSM_Logo_626_561_Clear.png",
-        date: "2023",
+        date: "2024",
         category: "methodology"
     },
     {
@@ -192,7 +192,7 @@ const certifications = [
         description: "Certificado en Cloud Computing de Google.",
         url: "#",
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
-        date: "2023",
+        date: "2019",
         category: "cloud"
     },
     {
@@ -202,7 +202,7 @@ const certifications = [
         description: "Certificado en Desarrollo de Aplicaciones Móviles de Google.",
         url: "#",
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
-        date: "2023",
+        date: "2019",
         category: "development"
     },
     {
@@ -212,7 +212,7 @@ const certifications = [
         description: "Certificado en Competencias Digitales para Profesionales de Google.",
         url: "#",
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
-        date: "2023",
+        date: "2019",
         category: "methodology"
     },
     {
@@ -241,7 +241,7 @@ function renderCertifications(certifications) {
             <h3 class="cert-title">${cert.title}</h3>
             <p class="cert-issuer">${cert.issuer}</p>
             <p class="cert-description">${cert.description}</p>
-            <a href="${cert.url}" target="_blank" class="cert-link">Ver Certificación</a>
+            <a href="${cert.url}" target="_blank" class="cert-link">View Certification</a>
             <p class="cert-date">${cert.date}</p>
             <p class="cert-category">${cert.category}</p>
         `;
