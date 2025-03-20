@@ -81,7 +81,7 @@ const certifications = [
         issuer: "Desafío Latam",
         description: "Certificación por completar un curso sobre desarrollo web y conceptos de programación.",
         url: "https://cursos.desafiolatam.com/certificates/12surlny83",
-        logo: "https://desafiolatam.com/assets/images/hireline/hireline_logo_adl.png",
+        logo: "https://desafiolatam.com/wp-content/uploads/2024/05/cropped-flaticon-latam.png",
         date: "2023",
         category: "development"
     },
@@ -151,7 +151,7 @@ const certifications = [
         issuer: "Soy Lider",
         description: "Curso Básico de Scrum Master, adquiriendo conocimientos fundamentales en metodología Scrum.",
         url: "#",
-        logo: "https://lithespeed.com/wp-content/uploads/2021/05/CSM_Logo_626_561_Clear.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fortinet_logo.svg/1200px-Fortinet_logo.svg.png",
         date: "2024",
         category: "methodology"
     },
@@ -161,7 +161,7 @@ const certifications = [
         issuer: "Fortinet",
         description: "Completado el nivel 1 del programa Fortinet Network Security Expert.",
         url: "#",
-        logo: "https://w7.pngwing.com/pngs/732/418/png-transparent-fortinet-fortigate-100d-fortinet-fg-30d-bdl-950-12-h-w-plus-24x7-fc-and-fg-utm-bdl-1-year-firewall-firewall-icon-computer-network-text-logo.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fortinet_logo.svg/1200px-Fortinet_logo.svg.png",
         date: "2023",
         category: "security"
     },
@@ -171,7 +171,7 @@ const certifications = [
         issuer: "Fortinet",
         description: "Completado el nivel 2 del programa Fortinet Network Security Expert.",
         url: "#",
-        logo: "https://w7.pngwing.com/pngs/732/418/png-transparent-fortinet-fortigate-100d-fortinet-fg-30d-bdl-950-12-h-w-plus-24x7-fc-and-fg-utm-bdl-1-year-firewall-firewall-icon-computer-network-text-logo.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fortinet_logo.svg/1200px-Fortinet_logo.svg.png",
         date: "2023",
         category: "security"
     },
@@ -181,7 +181,7 @@ const certifications = [
         issuer: "Fortinet",
         description: "Completado el nivel 3 del programa Fortinet Network Security Expert.",
         url: "#",
-        logo: "https://w7.pngwing.com/pngs/732/418/png-transparent-fortinet-fortigate-100d-fortinet-fg-30d-bdl-950-12-h-w-plus-24x7-fc-and-fg-utm-bdl-1-year-firewall-firewall-icon-computer-network-text-logo.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fortinet_logo.svg/1200px-Fortinet_logo.svg.png",
         date: "2023",
         category: "security"
     },
